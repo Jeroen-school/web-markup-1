@@ -87,6 +87,10 @@ nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Soft shadow */
 }
 
+#home li a:visited {
+    color: #b8b8b8;
+}
+
 #home li a:hover {
     background-color: #FF4081; /* Bright background on hover */
     color: #FFFFFF; /* Change text color on hover */
