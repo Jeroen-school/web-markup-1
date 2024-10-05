@@ -210,3 +210,127 @@ footer p {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+
+#contact {
+    padding: 40px;
+    background-color: #1F1F1F;
+    color: #EAEAEA;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for depth */
+    line-height: 1.6;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #FF4081; /* Highlight the title */
+    text-align: center; /* Center-align for a clean look */
+}
+
+#contact p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    text-align: center; /* Centered for uniformity */
+}
+
+form {
+    display: grid;
+    gap: 20px; /* Slightly more spacing for breathing room */
+    font-size: 1rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #EAEAEA; /* Highlight labels */
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2C2C2C;
+    color: #EAEAEA;
+    transition: border-color 0.3s ease-in-out;
+}
+
+select:focus, input:focus, textarea:focus {
+    border-color: #FF4081; /* Adds focus color for better UX */
+    outline: none; /* Removes default focus outline */
+}
+
+select::placeholder, input::placeholder, textarea::placeholder {
+    color: #A0A0A0;
+}
+
+button {
+    padding: 12px;
+    background-color: #FF4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #fd4f89;
+    transform: translateY(-2px);
+}
+
+/* Styling for the "Contact Us Directly" Section */
+#contact h3 {
+    margin-top: 50px;
+    font-size: 1.6rem;
+    color: #FF4081;
+    text-align: center;
+}
+
+#direct-contact {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#direct-contact li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#direct-contact strong {
+    font-weight: bold;
+    color: #FF4081;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    #contact {
+        padding: 30px;
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+h1.thankyou {
+    color: #FF4081;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+
+p.thankyou-message {
+    color: #A0A0A0; 
+    font-size: 1.2rem; 
+    text-align: center; 
+    margin-top: 20px; 
+    line-height: 1.6;
+}
+

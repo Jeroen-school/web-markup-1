@@ -37,7 +37,8 @@
     <section id="space-text">
         <h2>Wonders of the Cosmos</h2>
         <p>
-            Space, often called the final frontier, has always fascinated us with its vastness and wonders. It's a place filled with shimmering stars, mysterious planets, and endless galaxies, all inviting us to explore what lies beyond our Earth. Our journey into space began with the launch of the first artificial satellite, Sputnik, and has since led to incredible discoveries through missions like Voyager and the Mars rovers. These explorations have shown us the harsh realities of other worlds, where fierce storms whip across Jupiter and frozen landscapes on Pluto hint at the possibility of life beyond our planet. As we look up at the night sky, we can't help but wonder: Are we alone in the universe? What else is out there? Space exploration is more than just science; it showcases human creativity, bravery, and our desire to understand more about our surroundings. With exciting projects like the Artemis program, which aims to send humans back to the Moon, and plans for future trips to Mars, we're on the brink of a new age of space travel. Every new discovery helps us appreciate the complexity of the universe and our place in it, sparking curiosity in the minds of future generations. As we venture further into the cosmos, we realize that space is not just an empty void; it is a treasure trove of knowledge waiting to be uncovered, with each star, planet, and galaxy telling a unique story just waiting for us to explore.
+            Space, the vast and mysterious expanse that stretches beyond our Earth, has long captivated the human imagination. From the earliest civilizations, we’ve looked up at the stars, wondering what lies beyond the sky and how it all works. Space exploration, which began in earnest in the mid-20th century, has transformed those ancient questions into a pursuit of knowledge, fueled by technology and curiosity. The launch of Sputnik in 1957 marked the first step, quickly followed by the monumental achievement of landing humans on the Moon in 1969 during NASA's Apollo missions. Since then, we've sent robotic probes to every planet in the solar system, revealed the turbulent surface of Venus, the massive storms of Jupiter, and the icy, unexplored regions of distant dwarf planets like Pluto.
+            <br><br>Human space travel has evolved too, with the International Space Station (ISS) serving as a symbol of global cooperation, orbiting 400 kilometers above Earth. Astronauts live and work there for months at a time, conducting scientific experiments that could improve life on Earth or prepare us for longer journeys into space. Missions like the Mars rovers and the groundbreaking James Webb Space Telescope continue to deliver incredible insights, revealing details about the ancient universe, star formation, and the potential for life on distant worlds.
         </p>
         <img 
         src="home/webb_home.png"
@@ -67,21 +68,48 @@
         <img 
             src="home/pillars_home.jpg"
             alt="Pillars of Creation"
-            title="Image of The Pillars of Creation, by the James Webb Space Telescope"
+            title="Image of The Pillars of Creation, by the Hubble Space Telescope"
             class="pillars-img">
     </section>
     
     <!-- Contact section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Thank you for your interest in the Celestial Bodies Website. If you have any questions, comments, or feedback, please reach out to us through the following means:</p>
-        <ul>
-            <li>Email: <a href="mailto:contact@celestialbodies.com">contact@celestialbodies.com</a></li>
-            <li>Phone: +123-456-7890</li>
-            <li>Address: 123 Space Avenue, Galaxy City, Universe 00001</li>
+        <p>If you have any questions or requests, please fill out the form below and we'll get back to you as soon as possible.</p>
+    
+        <form action="thankyou.html" method="GET">
+            <label for="salutation">Salutation:</label>
+            <select id="salutation" name="salutation" required>
+                <option value="">--Select--</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Mx.">Mx. (Gender-Neutral)</option>
+            </select>
+    
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+    
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+    
+            <label for="phone">Your Phone Number (optional):</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+    
+            <label for="message">Your Question/Request:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Enter your question or request"></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    
+        <h3>Or Contact Us Directly</h3>
+        <ul id="direct-contact">
+            <li><strong>Email:</strong> <a href="mailto:contact@celestialbodies.com">contact@celestialbodies.com</a></li>
+            <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+            <li><strong>Address:</strong> 123 Galaxy Way, Suite 100, Universe City</li>
+            <li><strong>Office Hours:</strong> Mon-Fri, 9AM - 5PM (CET)</li>
         </ul>
-        <p>We look forward to hearing from you and helping you on your journey through the cosmos!</p>
-
+    </section>
+    
         <!-- FAQ section -->
         <section id="faq">
             <h3>Frequently Asked Questions</h3>
