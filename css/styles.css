@@ -334,3 +334,234 @@ p.thankyou-message {
     line-height: 1.6;
 }
 
+#sun {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#sun h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.sun-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+}
+
+.sun-img {
+    max-width: 55%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#mercury {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#mercury h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.mercury-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+}
+
+.mercury-img {
+    max-width: 55%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#venus {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#venus h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.venus-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+}
+
+.venus-img {
+    max-width: 58%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#earth {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#earth h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.earth-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+}
+
+.earth-img {
+    max-width: 62%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#moon {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#moon h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.moon-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+}
+
+.moon-img {
+    max-width: 55%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#mars {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#mars h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.mars-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+}
+
+.mars-img {
+    max-width: 55%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#jupiter {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#jupiter h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.jupiter-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+}
+
+.jupiter-img {
+    max-width: 64%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#saturn {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#saturn h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.saturn-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+}
+
+.saturn-img {
+    max-width: 400%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
