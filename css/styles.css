@@ -334,6 +334,44 @@ p.thankyou-message {
     line-height: 1.6;
 }
 
+.back-to-top {
+    display: block; /* Always show the button */
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the page */
+    right: 20px; /* Distance from the right of the page */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 50%; /* Circular button */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-size: 24px; /* Font size for the arrow */
+    text-decoration: none; /* Remove underline from link */
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 4px 15px #242424; /* Shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.back-to-top:hover {
+    background-color: #2c2929; /* Different background on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.back-to-top:active {
+    transform: scale(1); /* Return to original size on click */
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+#solarsystem{
+    font-size: 1.1rem;
+}
+
 #sun {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
@@ -352,10 +390,11 @@ p.thankyou-message {
 .sun-ul {
     margin-bottom: 0;
     grid-column: 1/2;
+    align-content: center;
 }
 
 .sun-img {
-    max-width: 55%; /* Ensure image doesn't overflow */
+    max-width: 70%; /* Ensure image doesn't overflow */
     height: auto; /* Maintain aspect ratio */
     grid-column: 2; /* Keep the image in the second column */
     justify-self: center;
@@ -381,6 +420,7 @@ p.thankyou-message {
 .mercury-ul {
     margin-bottom: 0;
     grid-column: 1/2;
+    align-content: center;
 }
 
 .mercury-img {
@@ -410,6 +450,7 @@ p.thankyou-message {
 .venus-ul {
     margin-bottom: 0;
     grid-column: 1/2;
+    align-content: center;
 }
 
 .venus-img {
@@ -439,6 +480,7 @@ p.thankyou-message {
 .earth-ul {
     margin-bottom: 0;
     grid-column: 1/2;
+    align-content: center;
 }
 
 .earth-img {
@@ -468,6 +510,7 @@ p.thankyou-message {
 .moon-ul {
     margin-bottom: 0;
     grid-column: 1/2;
+    align-content: center;
 }
 
 .moon-img {
@@ -497,6 +540,7 @@ p.thankyou-message {
 .mars-ul {
     margin-bottom: 0;
     grid-column: 1/2;
+    align-content: center;
 }
 
 .mars-img {
@@ -526,6 +570,7 @@ p.thankyou-message {
 .jupiter-ul {
     margin-bottom: 0;
     grid-column: 1/2;
+    align-content: center;
 }
 
 .jupiter-img {
@@ -555,10 +600,654 @@ p.thankyou-message {
 .saturn-ul {
     margin-bottom: 0;
     grid-column: 1/2;
+    align-content: center;
 }
 
 .saturn-img {
     max-width: 400%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#uranus {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#uranus h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.uranus-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.uranus-img {
+    max-width: 70%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#neptune {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#neptune h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.neptune-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.neptune-img {
+    max-width: 60%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#starsconstellations{
+    font-size: 1.1rem;    
+}
+
+#sirius {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#sirius h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.sirius-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.sirius-img {
+    max-width: 70%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+#betelgeuse {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#betelgeuse h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.betelgeuse-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.betelgeuse-img {
+    max-width: 70%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#polaris {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#polaris h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.polaris-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.polaris-img {
+    max-width: 90%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#rigel {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#rigel h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.rigel-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.rigel-img {
+    max-width: 90%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#proximacentauri {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#proximacentauri h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.proximacentauri-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.proximacentauri-img {
+    max-width: 80%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#thesun {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#thesun h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.thesun-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.thesun-img {
+    max-width: 75%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#orion {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#orion h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.orion-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.orion-img {
+    max-width: 70%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#ursamajor {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#ursamajor h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.ursamajor-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.ursamajor-img {
+    max-width: 70%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#scorpius {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#scorpius h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.scorpius-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.scorpius-img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#blackholes {
+    font-size: 1.1rem;    
+}
+#sagittariusa {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#sagittariusa h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.sagittariusa-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.sagittariusa-img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#m87 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#m87 h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.m87-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.m87-img {
+    max-width: 110%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#cygnus {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#cygnus h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.cygnus-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.cygnus-img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#crabpulsar {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#crabpulsar h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.crabpulsar-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.crabpulsar-img {
+    max-width: 70%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#velapulsar {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#velapulsar h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.velapulsar-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.velapulsar-img {
+    max-width: 90%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#nebulae {
+    font-size: 1.1rem;
+}
+
+#orionnebula {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#orionnebula h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.orionnebula-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.orionnebula-img {
+    max-width: 90%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#carina {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#carina h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.carina-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.carina-img {
+    max-width: 90%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#eaglenebula {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#eaglenebula h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.eaglenebula-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.eaglenebula-img {
+    max-width: 90%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#ringnebula {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#ringnebula h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.ringnebula-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.ringnebula-img {
+    max-width: 90%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    grid-column: 2; /* Keep the image in the second column */
+    justify-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#milkyway {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto 1fr; /* Ensure the title and paragraph take full height */
+    gap: 20px; /* Space between items */
+    padding: 40px;
+    background-color: #000000;
+    color: #EAEAEA;
+}
+
+#milkyway h2 {
+    grid-column: 1 / 3; /* Make the header span both columns */
+    margin: 0; /* Optional: Remove margin for better spacing */
+}
+
+.milkyway-ul {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-content: center;
+}
+
+.milkyway-img {
+    max-width: 90%; /* Ensure image doesn't overflow */
     height: auto; /* Maintain aspect ratio */
     grid-column: 2; /* Keep the image in the second column */
     justify-self: center;
