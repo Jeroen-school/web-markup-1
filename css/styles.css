@@ -16,6 +16,12 @@ header {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
+p {
+    text-indent: 20px; /* Indents the first line by 20px */
+    line-height: 1.6;  /* Maintain good readability */
+}
+
+
 header h1 {
     font-size: 36px;
     color: #FF4081; /* Bright pink for header text */
@@ -337,8 +343,8 @@ p.thankyou-message {
 .back-to-top {
     display: block; /* Always show the button */
     position: fixed;
-    bottom: 20px; /* Distance from the bottom of the page */
-    right: 20px; /* Distance from the right of the page */
+    bottom: 30px; /* Distance from the bottom of the page */
+    right: 30px; /* Distance from the right of the page */
     background-color: #333; /* Background color */
     color: white; /* Text color */
     border: none; /* No border */
@@ -1350,4 +1356,3 @@ html {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
-
