@@ -1356,3 +1356,167 @@ html {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+
+/* General Responsive Section and Text Adjustments */
+@media (max-width: 768px) {
+    section {
+        padding: 20px; /* Reduce padding for sections on smaller screens */
+    }
+
+    header h1 {
+        font-size: 28px; /* Reduce header size for better fit */
+    }
+
+    h2 {
+        font-size: 24px; /* Adjust headings for smaller screens */
+    }
+
+    p {
+        font-size: 16px; /* Reduce paragraph text size for readability */
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px; /* Keep button padding consistent for easier interaction */
+    }
+
+    ul {
+        list-style-type: none; /* Remove default list style on mobile */
+        padding-left: 0; /* Remove default padding */
+    }
+
+    li {
+        margin-bottom: 15px; /* Ensure list items have space between them */
+    }
+}
+
+/* Image Responsiveness */
+@media (max-width: 768px) {
+    img {
+        width: 100%; /* Ensure images use full width available */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .universe_img, .pillars-img, .space-image, .sun-img, .mercury-img, .venus-img, .earth-img, .moon-img, .mars-img, .jupiter-img, .saturn-img, .uranus-img, .neptune-img, .sirius-img, .betelgeuse-img, .polaris-img, .rigel-img, .proximacentauri-img, .thesun-img, .orion-img, .ursamajor-img, .scorpius-img {
+        width: 100%; /* Ensure images fill the container */
+        max-width: 100%; /* Remove size limits for better adaptability */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Grid Layout Adjustments for Mobile */
+@media (max-width: 768px) {
+    #space-text, #pillars, #sun, #mercury, #venus, #earth, #moon, #mars, #jupiter, #saturn, #uranus, #neptune, #sirius, #betelgeuse, #polaris, #rigel, #proximacentauri, #thesun, #orion, #ursamajor, #scorpius {
+        display: flex;
+        flex-direction: column; /* Change to a single column layout for mobile */
+        gap: 20px; /* Add gap between elements for clarity */
+    }
+}
+
+/* Back to Top Button Adjustment for Mobile */
+@media (max-width: 480px) {
+    .back-to-top {
+        bottom: 10px; /* Less distance from the bottom */
+        right: 10px;
+        width: 50px; /* Slightly reduce button size */
+        height: 50px; /* Slightly reduce button size */
+        font-size: 20px; /* Adjust font size for smaller button */
+    }
+}
+
+/* Footer Adjustments */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 14px; /* Reduce footer text size for readability */
+    }
+}
+
+/* Contact Form Adjustment */
+@media (max-width: 768px) {
+    #contact {
+        padding: 30px;
+        max-width: 100%; /* Ensure the contact form fits smaller screens */
+    }
+
+    #contact h2 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    form {
+        gap: 15px; /* Adjust gap between form elements */
+    }
+}
+
+/* FAQ Section Adjustments */
+@media (max-width: 768px) {
+    #faq article {
+        padding: 15px; /* Reduce padding for FAQ articles on smaller screens */
+    }
+
+    #faq details {
+        font-size: 16px; /* Smaller text for FAQ entries */
+    }
+}
+
+/* Adjustments for Very Small Screens (Under 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px; /* Smaller header text on very small screens */
+    }
+
+    nav a {
+        font-size: 14px; /* Further reduce font size for navigation */
+    }
+
+    section p {
+        font-size: 14px; /* Further reduce paragraph text for readability */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust heading size for very small screens */
+    }
+
+    button {
+        padding: 8px; /* Adjust button padding for smaller screens */
+    }
+
+    .back-to-top {
+        bottom: 8px;
+        right: 8px;
+        width: 40px; /* Reduce button size further */
+        height: 40px;
+    }
+}
+
+
+/* Responsive Navigation Styling for Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links horizontally */
+        padding: 0;
+        margin: 0;
+        gap: 15px; /* Add space between links */
+    }
+
+    nav ul li {
+        margin: 0; /* Remove default margin */
+    }
+
+    nav a {
+        font-size: 18px; /* Adjust font size for readability */
+        padding: 10px 20px; /* Increase padding for easier tapping */
+        display: block; /* Make links full-width within their container */
+        text-align: center; /* Center the link text */
+        background-color: #1B1B1B; /* Maintain background color for consistency */
+        border-radius: 4px; /* Add rounded corners */
+        width: 100%; /* Ensure links are full-width within the flex container */
+        box-sizing: border-box; /* Include padding in width calculations */
+    }
+
+    nav a:hover {
+        background-color: #FF4081; /* Bright pink background on hover */
+        color: #FFFFFF; /* Change text color on hover */
+    }
+}
