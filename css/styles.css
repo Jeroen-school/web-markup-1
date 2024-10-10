@@ -28,6 +28,10 @@ header h1 {
     letter-spacing: 1px; /* Slightly increased spacing for elegance */
 }
 
+.header {
+    text-indent: 0;    
+}
+
 /* Navigation styling */
 nav {
     background-color: #1B1B1B; /* Consistent dark theme */
@@ -157,7 +161,6 @@ footer p {
     height: auto; /* Maintain aspect ratio */
     border-radius: 180px; /* Optional: Rounded corners */
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for depth */
-    margin-left: 20px; /* Add space between text and image */
 }
 
 #space-text {
