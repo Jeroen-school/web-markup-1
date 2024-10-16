@@ -63,6 +63,10 @@ nav a:hover {
     color: #FFFFFF; /* Change text color on hover */
 }
 
+.nav-active {
+    background-color: #FF4081; /* Bright pink background on active */
+    color: #FFFFFF; /* Change text color on active */
+}
 /* Home page styling */
 #home {
     padding: 40px;
@@ -177,9 +181,13 @@ footer {
     color: #EAEAEA;
 }
 
-#space-text h2 {
+#space-text h3 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
 }
 
 #space-text p {
@@ -261,7 +269,7 @@ label {
 }
 
 select, input, textarea {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     border: 1px solid #333;
     border-radius: 5px;
@@ -276,6 +284,8 @@ select:focus, input:focus, textarea:focus {
 }
 
 select::placeholder, input::placeholder, textarea::placeholder {
+    font-family: sans-serif;
+    font-size: 12px;
     color: #A0A0A0;
 }
 
@@ -368,10 +378,9 @@ p.thankyou-message {
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
 }
 
-.back-to-top-icon {
-    width: 20px;
-    height: 20px;
-    fill: white;
+.arrow {
+    width: 30px;
+    height: auto;
 }
 
 .back-to-top:hover {
@@ -404,6 +413,14 @@ html {
 #sun h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .sun-ul {
@@ -434,6 +451,14 @@ html {
 #mercury h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .mercury-ul {
@@ -464,6 +489,14 @@ html {
 #venus h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .venus-ul {
@@ -494,6 +527,14 @@ html {
 #earth h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .earth-ul {
@@ -524,6 +565,14 @@ html {
 #moon h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .moon-ul {
@@ -554,6 +603,14 @@ html {
 #mars h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .mars-ul {
@@ -584,6 +641,14 @@ html {
 #jupiter h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .jupiter-ul {
@@ -614,6 +679,14 @@ html {
 #saturn h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .saturn-ul {
@@ -644,6 +717,14 @@ html {
 #uranus h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .uranus-ul {
@@ -674,6 +755,14 @@ html {
 #neptune h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .neptune-ul {
@@ -708,6 +797,14 @@ html {
 #sirius h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .sirius-ul {
@@ -739,6 +836,14 @@ html {
 #betelgeuse h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .betelgeuse-ul {
@@ -769,6 +874,14 @@ html {
 #polaris h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .polaris-ul {
@@ -799,6 +912,14 @@ html {
 #rigel h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .rigel-ul {
@@ -830,6 +951,14 @@ html {
 #proximacentauri h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .proximacentauri-ul {
@@ -860,6 +989,14 @@ html {
 #thesun h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .thesun-ul {
@@ -890,6 +1027,14 @@ html {
 #orion h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .orion-ul {
@@ -920,6 +1065,14 @@ html {
 #ursamajor h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .ursamajor-ul {
@@ -950,6 +1103,14 @@ html {
 #scorpius h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .scorpius-ul {
@@ -983,6 +1144,14 @@ html {
 #sagittariusa h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .sagittariusa-ul {
@@ -1013,6 +1182,14 @@ html {
 #m87 h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .m87-ul {
@@ -1043,6 +1220,14 @@ html {
 #cygnus h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .cygnus-ul {
@@ -1073,6 +1258,14 @@ html {
 #crabpulsar h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .crabpulsar-ul {
@@ -1103,6 +1296,14 @@ html {
 #velapulsar h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .velapulsar-ul {
@@ -1137,6 +1338,14 @@ html {
 #orionnebula h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .orionnebula-ul {
@@ -1167,6 +1376,14 @@ html {
 #carina h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .carina-ul {
@@ -1197,6 +1414,14 @@ html {
 #eaglenebula h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .eaglenebula-ul {
@@ -1227,6 +1452,14 @@ html {
 #ringnebula h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .ringnebula-ul {
@@ -1257,6 +1490,14 @@ html {
 #milkyway h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .milkyway-ul {
@@ -1287,6 +1528,14 @@ html {
 #andromeda h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .andromeda-ul {
@@ -1317,6 +1566,14 @@ html {
 #sombrero h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .sombrero-ul {
@@ -1347,6 +1604,14 @@ html {
 #whirlpool h2 {
     grid-column: 1 / 3; /* Make the header span both columns */
     margin: 0; /* Optional: Remove margin for better spacing */
+    font-size: 24px;
+    color: #FF4081;
+    border-bottom: 2px solid #FF4081;
+    padding-bottom: 10px;
+    content: ""; /* Pseudo element */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 301px; /* Width */
+    padding-top: 20px; /* This creates some space between the element and the border. */
 }
 
 .whirlpool-ul {
