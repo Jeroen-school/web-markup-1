@@ -1404,7 +1404,7 @@ html {
         height: auto; /* Maintain aspect ratio */
     }
 
-    .universe_img, .pillars-img, .space-image, .sun-img, .mercury-img, .venus-img, .earth-img, .moon-img, .mars-img, .jupiter-img, .saturn-img, .uranus-img, .neptune-img, .sirius-img, .betelgeuse-img, .polaris-img, .rigel-img, .proximacentauri-img, .thesun-img, .orion-img, .ursamajor-img, .scorpius-img {
+    .universe_img, .pillars-img, .space-image, .sun-img, .mercury-img, .venus-img, .earth-img, .moon-img, .mars-img, .jupiter-img, .saturn-img, .uranus-img, .neptune-img, .sirius-img, .betelgeuse-img, .polaris-img, .rigel-img, .proximacentauri-img, .thesun-img, .orion-img, .ursamajor-img, .scorpius-img, .sagittariusa-img, .m87-img, .cygnus-img, .crabpulsar-img, .velapulsar-img, .orionnebula-img, .carina-img, .eaglenebula-img, .ringnebula-img, .milkyway-img, .andromeda-img, .sombrero-img, .whirlpool-img {
         width: 100%; /* Ensure images fill the container */
         max-width: 100%; /* Remove size limits for better adaptability */
         height: auto; /* Maintain aspect ratio */
@@ -1413,7 +1413,7 @@ html {
 
 /* Grid Layout Adjustments for Mobile */
 @media (max-width: 768px) {
-    #space-text, #pillars, #sun, #mercury, #venus, #earth, #moon, #mars, #jupiter, #saturn, #uranus, #neptune, #sirius, #betelgeuse, #polaris, #rigel, #proximacentauri, #thesun, #orion, #ursamajor, #scorpius {
+    #space-text, #pillars, #sun, #mercury, #venus, #earth, #moon, #mars, #jupiter, #saturn, #uranus, #neptune, #sirius, #betelgeuse, #polaris, #rigel, #proximacentauri, #thesun, #orion, #ursamajor, #scorpius, #sagittariusa, #m87, #cygnus, #crabpulsar, #velapulsar, #orionnebula, #carina, #eaglenebula, #ringnebula, #milkyway, #andromeda, #sombrero, #whirlpool {
         display: flex;
         flex-direction: column; /* Change to a single column layout for mobile */
         gap: 20px; /* Add gap between elements for clarity */
