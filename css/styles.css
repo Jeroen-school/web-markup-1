@@ -347,6 +347,15 @@ button:hover {
     }
 }
 
+#thankyou {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;  /* Full viewport width */
+    height: 78vh; /* Full viewport height, if desired */
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+}
+
 h1.thankyou {
     color: #FF4081;
     font-size: 3rem;
@@ -1795,5 +1804,139 @@ html {
     nav a:hover {
         background-color: #FF4081; /* Bright pink background on hover */
         color: #FFFFFF; /* Change text color on hover */
+    }
+}
+
+.cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    background: linear-gradient(145deg, #252525, #1a1a1a);
+    color: white;
+    padding: 20px 50px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    z-index: 9999;
+    max-width: 550px;
+    width: 90%;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: slideIn 1s ease;
+}
+
+/* Text inside the pop-up */
+.cookie-popup p {
+    text-indent: 0;
+    margin: 0;
+    font-size: 17px;
+    flex-grow: 1;
+    color: #e0e0e0;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+/* Link styling */
+.cookie-popup a {
+    color: #FF4081;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.cookie-popup a:hover {
+    color: #ff206a;
+    border-bottom: 2px solid #ff206a;
+}
+
+/* Button styling */
+.cookie-popup button {
+    background-color: #FF4081;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 20px;
+    box-shadow: 0 6px 20px rgba(255, 64, 129, 0.4);
+    outline: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Button hover effect */
+.cookie-popup button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 64, 129, 0.3), rgba(255, 64, 129, 0));
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.cookie-popup button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.cookie-popup button:hover {
+    background-color: #ff206a;
+    /* Removed transform property */
+    box-shadow: 0 8px 30px rgba(255, 64, 129, 0.6);
+}
+
+/* Fade-out effect - moving downward */
+.cookie-popup.fade-out {
+    opacity: 0;
+    transform: translateX(-50%) translateY(50px);
+}
+
+/* Slide in effect for when it appears */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50%) translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media query to improve small-screen experience */
+@media (max-width: 600px) {
+    .cookie-popup {
+        flex-direction: column;
+        padding: 15px 20px;
+        bottom: 10px;
+        max-width: 95%;
+    }
+
+    .cookie-popup p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .cookie-popup button {
+        margin-left: 0;
+        width: 100%;
+        padding: 10px 0;
     }
 }
