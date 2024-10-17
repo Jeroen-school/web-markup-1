@@ -190,8 +190,9 @@ footer {
     padding-bottom: 10px;
 }
 
-#space-text p {
+#space-text .pre-line {
     grid-column: 1; /* Keep the paragraph in the first column */
+    white-space: pre-line;
 }
 
 .space-image {
@@ -201,6 +202,10 @@ footer {
     align-self: start; /* Align image to the start of its grid cell */
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+figcaption {
+    font-size: 14px;
 }
 
 #pillars {
