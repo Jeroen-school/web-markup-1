@@ -370,6 +370,7 @@ p.thankyou-message {
     text-align: center; 
     margin-top: 20px; 
     line-height: 1.6;
+    text-indent: 0;
 }
 
 .back-to-top {
@@ -2070,5 +2071,32 @@ html {
 
     .hamburger {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #thankyou {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;  /* Full viewport width */
+        height: 74vh; /* Full viewport height, if desired */
+        justify-content: center; /* Align items horizontally */
+        align-items: center; /* Align items vertically */
+    }
+    
+    h1.thankyou {
+        color: #FF4081;
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+    }
+    
+    p.thankyou-message {
+        color: #A0A0A0; 
+        font-size: 1.2rem; 
+        text-align: center; 
+        margin-top: 20px; 
+        line-height: 1.6;
+        text-indent: 0;
     }
 }
