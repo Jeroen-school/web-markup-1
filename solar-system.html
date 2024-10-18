@@ -15,12 +15,19 @@
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="solar-system.html" class="nav-active">Our Solar System</a>
-        <a href="stars-constellations.html">Stars and Constellations</a>
-        <a href="black-holes.html">Black Holes and Neutron Stars</a>
-        <a href="nebulae-galaxies.html">Nebulae and Galaxies</a>
-        <a href="index.html#contact">Contact</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solar-system.html" class="nav-active">Our Solar System</a></li>
+            <li><a href="stars-constellations.html">Stars and Constellations</a></li>
+            <li><a href="black-holes.html">Black Holes and Neutron Stars</a></li>
+            <li><a href="nebulae-galaxies.html">Nebulae and Galaxies</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
     </nav>
 
     <a href="#top" class="back-to-top">
@@ -149,5 +156,6 @@
         <p>&copy; 2024 Celestial Bodies Website. All Rights Reserved.</p>
     </footer>
 
+    <script src="scripts/scripthamburger.js"></script>
 </body>
 </html>
