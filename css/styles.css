@@ -93,6 +93,7 @@ nav a:hover {
 }
 
 #home li a {
+    color: #b8b8b8;
     display: block;
     padding: 15px;
     background-color: #222; /* Dark button background */
