@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="author" content="Dávid Sebestyén">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive website about celestial bodies, stars, and galaxies, providing insightful and detailed information.">
+    <meta name="keywords" content="celestial bodies, stars, galaxies, black holes, planets">
     <title>Celestial Bodies Website</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="icon" href="img/home/Logoblack.png" type="image/png">
 </head>
 <body>
@@ -92,28 +94,33 @@
         <p>If you have any questions or requests, please fill out the form below and we'll get back to you as soon as possible.</p>
     
         <form action="thankyou.html" method="POST">
-            <label for="salutation">Salutation:</label>
-            <select id="salutation" name="salutation" required>
+            <fieldset>
+              <legend>Contact Information</legend>
+              
+              <label for="salutation">Salutation:</label>
+              <select id="salutation" name="salutation" required>
                 <option value="">--Select--</option>
                 <option value="Mr.">Mr.</option>
                 <option value="Mrs.">Mrs.</option>
                 <option value="Mx.">Mx. (Gender-Neutral)</option>
-            </select>
-    
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your full name">
-    
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Enter your email address">
-    
-            <label for="phone">Your Phone Number (optional):</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-    
-            <label for="message">Your Question/Request:</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Enter your question or request"></textarea>
-    
-            <button type="submit">Submit</button>
-        </form>
+              </select>
+          
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name">
+          
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email address">
+          
+              <label for="phone">Your Phone Number (optional):</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          
+              <label for="message">Your Question/Request:</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Enter your question or request"></textarea>
+          
+              <button type="submit">Submit</button>
+            </fieldset>
+          </form>
+          
     
         <h3>Or Contact Us Directly</h3>
         <ul id="direct-contact">
@@ -129,6 +136,7 @@
             <h3>Frequently Asked Questions</h3>
     
             <article>
+                <h4 class="visually-hidden">Celestial Body</h4> <!-- New hidden heading -->
                 <details>
                     <summary>What is a celestial body?</summary>
                     <p>A celestial body is any natural object outside of Earth's atmosphere, such as planets, moons, stars, and asteroids.</p>
@@ -136,6 +144,7 @@
             </article>
     
             <article>
+                <h4 class="visually-hidden">Stars</h4> <!-- New hidden heading -->
                 <details>
                     <summary>How are stars classified?</summary>
                     <p>Stars are classified based on their temperature and brightness, often grouped into spectral types such as O, B, A, F, G, K, and M.</p>
@@ -143,6 +152,7 @@
             </article>
     
             <article>
+                <h4 class="visually-hidden">Planets</h4> <!-- New hidden heading -->
                 <details>
                     <summary>What are the planets in our solar system?</summary>
                     <p>Our solar system consists of eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.</p>
@@ -150,6 +160,7 @@
             </article>
     
             <article>
+                <h4 class="visually-hidden">Earth</h4> <!-- New hidden heading -->
                 <details>
                     <summary>What makes Earth unique in the solar system?</summary>
                     <p>Earth is the only planet known to support life, thanks to its liquid water, suitable atmosphere, and magnetic field.</p>
@@ -157,6 +168,7 @@
             </article>
     
             <article>
+                <h4 class="visually-hidden">Constellation</h4> <!-- New hidden heading -->
                 <details>
                     <summary>What is a constellation?</summary>
                     <p>A constellation is a group of stars that forms a recognizable pattern in the sky, often named after mythological figures, animals, or objects.</p>
@@ -164,6 +176,7 @@
             </article>
     
             <article>
+                <h4 class="visually-hidden">Stars</h4> <!-- New hidden heading -->
                 <details>
                     <summary>How do stars form?</summary>
                     <p>Stars form from clouds of gas and dust in space, which collapse under gravity and ignite nuclear fusion at their core.</p>
@@ -171,6 +184,7 @@
             </article>
     
             <article>
+                <h4 class="visually-hidden">Black Hole</h4> <!-- New hidden heading -->
                 <details>
                     <summary>What is a black hole?</summary>
                     <p>A black hole is a region of space where gravity is so strong that nothing, not even light, can escape from it.</p>
@@ -178,6 +192,7 @@
             </article>
     
             <article>
+                <h4 class="visually-hidden">Forming of Black Holes</h4> <!-- New hidden heading -->
                 <details>
                     <summary>How do black holes form?</summary>
                     <p>Black holes form when massive stars collapse under their own gravity at the end of their life cycles.</p>
@@ -185,6 +200,7 @@
             </article>
     
             <article>
+                <h4 class="visually-hidden">Nebula</h4> <!-- New hidden heading -->
                 <details>
                     <summary>What is a nebula?</summary>
                     <p>A nebula is a giant cloud of gas and dust in space, often the birthplace of stars and planets.</p>
@@ -192,6 +208,7 @@
             </article>
     
             <article>
+                <h4 class="visually-hidden">Galaxy Classification</h4> <!-- New hidden heading -->
                 <details>
                     <summary>How are galaxies classified?</summary>
                     <p>Galaxies are classified into three main types: spiral, elliptical, and irregular, based on their shape and structure.</p>
@@ -201,6 +218,7 @@
         </section>
 
         <section class="cookie-popup" id="cookiePopup">
+            <h3 class="visually-hidden">Cookie Consent</h3> <!-- New hidden heading -->
             <p>We use cookies to ensure you get the best experience on our website. <a href="#">Learn more</a>.</p>
             <button id="acceptCookies">Accept</button>
         </section>
